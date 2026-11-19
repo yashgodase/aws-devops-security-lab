@@ -18,7 +18,7 @@ jobs:
         run: docker build -t security-lab:v1 ./docker-lab
 
       - name: Scan Docker image with Trivy
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: security-lab:v1
           format: table
